@@ -4,35 +4,68 @@
     <meta charset="UTF-8">
     <title>Title</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript">
+	<script>
 	function codeAddress() {
-		var x = document.getElementById("menu").parentElement.nodeName;
+		var x = document.getElementById("content").parentElement.nodeName;
 		console.log(x);
+		console.log(window.innerHeight);
 	}
-	window.onload = codeAddress;
+	window.onload = codeAddress;	
 	</script>	
   </head>
   <body>
 	<div id= "content">
-		<header id= "logo">		
-			<p id= "logotext">Samy Ramsey</p>
-		</header>
-		<nav id= "menu">
-			<ul>
-				<li>
-					<a href="">About me</a>
-				</li>
-				<li>
-					<a href="">CV</a>
-				</li>
-				<li>
-					<a href="">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<div id="intro">
-			<p id= "introtext">Hello, my name is Samy.</p>
-		</div>	
+		<header id= "head">		
+			<p id= "headtext">SAMY RAMSEY</p>
+			<nav id= "menu">
+				<ul>
+					<li>
+						<a href="">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li>
+						<a href="">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li>
+						<a href="">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</header>		
+		<div id= "container">
+			<div id= "intro">
+				<p id= "introtext">Hi, my name is Samy<br>I'm a _____</p>
+			</div>
+			<canvas id= "canv" width= "1100" height= "600">
+			Your browser does not support the HTML5 canvas tag.
+			</canvas>
+		</div>
+		<canvas id= "canv2" width="1100" height="600">
+		Your browser does not support the HTML5 canvas tag.
+		</canvas>	
 	</div>
+	
+	<script>
+		var c = document.getElementById("canv");
+		var context = c.getContext("2d");
+		context.beginPath();
+		context.moveTo(0,0);
+		context.lineTo(0, 520);
+		context.lineTo(1100, 600);
+		context.lineTo(1100, 0);
+		context.closePath();
+		context.fillStyle = "Green";
+		context.fill();
+		
+		var cc = document.getElementById("canv2");
+		var context2 = cc.getContext("2d");
+		context2.beginPath();
+		context2.moveTo(0,0);
+		context2.lineTo(1100, 0);
+		context2.lineTo(1100, 520);
+		context2.lineTo(0, 600);
+		context2.closePath();
+		context2.fillStyle = "#FFC232";
+		context2.fill();
+	</script>
   </body>
 </html>

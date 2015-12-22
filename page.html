@@ -2,17 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Samy Ramsey</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="typed/typed.js" type="text/javascript"></script>
 	<script>
 	function codeAddress() {
 		var x = document.getElementById("content").parentElement.nodeName;
 		console.log(x);
 		console.log(window.innerHeight);
 	}
-	window.onload = codeAddress;	
-	</script>	
-  </head>
+	window.onload = codeAddress;
+	
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $("#typed-text"),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+    function foo(){ console.log("Callback"); }
+</script>	
+ </head>
   <body>
 	<div id= "content">
 		<header id= "head">		
@@ -32,16 +58,33 @@
 			</nav>
 		</header>		
 		<div id= "container">
+			<div id= "typed-text">
+				<p>Hi, my name is Samy<br>I'm a _____</p>
+			</div>
 			<div id= "intro">
-				<p id= "introtext">Hi, my name is Samy<br>I'm a _____</p>
+				<span id="typed"></span>
 			</div>
 			<canvas id= "canv" width= "1100" height= "600">
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>
+			<div id= "intro2">
+				<img src= "mepluscat.jpg">
+				<div id="typed2">
+					<p id= "test">Welcome! I'm Samy, a senior at <b>Indiana University</b> and aspiring software developer.
+					As a lover of the visual arts I'm constantly trying to combine my two passions of code and art.
+					Naturally, I gravitated towards web development and design and am extremely enthusiastic to build my skills and learn as much as I can!<br><br>
+					In my spare time I can be usually be found...
+					</p>
+				</div>
+			</div>		
+			<canvas id= "canv2" width="1100" height="600">
+			Your browser does not support the HTML5 canvas tag.
+			</canvas>
+			<div id= "final-panel">
+				<div id= "contact">
+				</div>
+			</div>
 		</div>
-		<canvas id= "canv2" width="1100" height="600">
-		Your browser does not support the HTML5 canvas tag.
-		</canvas>	
 	</div>
 	
 	<script>
@@ -53,7 +96,7 @@
 		context.lineTo(1100, 600);
 		context.lineTo(1100, 0);
 		context.closePath();
-		context.fillStyle = "Green";
+		context.fillStyle = "#0B6121";
 		context.fill();
 		
 		var cc = document.getElementById("canv2");
@@ -64,7 +107,7 @@
 		context2.lineTo(1100, 520);
 		context2.lineTo(0, 600);
 		context2.closePath();
-		context2.fillStyle = "#FFC232";
+		context2.fillStyle = "#74DF00";
 		context2.fill();
 	</script>
   </body>

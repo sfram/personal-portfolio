@@ -15,28 +15,31 @@
 	window.onload = codeAddress;
 	
     $(function(){
-
         $("#typed").typed({
-            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-            stringsElement: $("#typed-text"),
-            typeSpeed: 30,
-            backDelay: 500,
-            loop: true,
+			//35 chars - 10
+			stringsElement: $("#typed-text"),
+			startDelay: 2000,
+            typeSpeed: 15,
+			backSpeed: 2,
+            loop: false,
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,
-            callback: function(){ foo(); },
-            resetCallback: function() { newTyped(); }
+            callback: function(){
+				console.log(typed.backspace);
+				newTyped();
+			},
+            resetCallback: function() { 
+			}
         });
-
-        $(".reset").click(function(){
-            $("#typed").typed('reset');
-        });
-
     });
 
-    function newTyped(){ /* A new typed object */ }
-    function foo(){ console.log("Callback"); }
+    function newTyped() { 
+	};
+    function foo(){ 
+		console.log("Callback"); 
+	}
+	
 </script>	
  </head>
   <body>
@@ -59,7 +62,11 @@
 		</header>		
 		<div id= "container">
 			<div id= "typed-text">
-				<p>Hi, my name is Samy<br>I'm a _____</p>
+				<p>Hi, my name is Samy.<br>I'm a developer.</p>
+				<p>Hi, my name is Samy.<br>I'm a designer.</p>
+				<p>Hi, my name is Samy.<br>I'm an artist.</p>
+				<p>Hi, my name is Samy.<br>I'm a </p>
+				<p>Hi, my name is Samy.<br></p>
 			</div>
 			<div id= "intro">
 				<span id="typed"></span>

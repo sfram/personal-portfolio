@@ -55,7 +55,7 @@ body {
 }
 #head {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     height: 70px;
     background-color: black;
@@ -102,7 +102,7 @@ a {
 }
 #intro, #intro2 {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 #intro {
@@ -110,7 +110,7 @@ a {
     height: 200px;
     margin-right: 350px;
     margin-left: 350px;	
-    margin-top: 200px;
+    margin-top: 150px;
 	text-align: center;
 
 }
@@ -118,11 +118,11 @@ a {
 	width: 100%;
 }
 
-img, #typed2 {
+#self, #typed2 {
 	position: absolute;
 	top:100px;
 }
-img {
+#self {
 	width: 30%;
 	left: 70px;
 	border: 10px solid;
@@ -144,9 +144,27 @@ img {
   left:0;
   right: 0;
   margin: auto;  
+  z-index: 1;
 }
 #final-panel {
+	position: relative;
 	width: 100%;
 	height: 800px;
 	background-color: #FFF300;
+	z-index: 0;
+}
+
+#contact {
+	position: absolute;
+	width: 500px;
+	height: 120px;
+	bottom: 50px;
+	left: 300px;
+	background-color:  #FFF300;
+	z-index: 4000;
+}
+
+footer {
+	width: 100%;
+	align: center;
 }

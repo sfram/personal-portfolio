@@ -35,13 +35,12 @@
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
-/* */
+/* End animated blinking cursor code */
 
 @font-face {
 	font-family: abeezee;
 	src: url("abeezee.otf") format("opentype");
 }
-
 * {
 	font-family: abeezee;
 }
@@ -80,7 +79,6 @@ ul {
 }
 li {
     display: inline-block;
-    *display: inline;
 }
 a {
 	color: white;
@@ -89,6 +87,7 @@ a {
 #container {
     position: relative;
     width: 1100px;
+	height: 1400px;
     margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 70px;
@@ -114,10 +113,29 @@ a {
 	text-align: center;
 
 }
-#intro2 {
-	width: 100%;
+#canv {
 }
-
+#canv2 {
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: auto;  
+  z-index: 1;
+}
+#canv3 {
+}
+#fill-panel {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: Purple;
+	z-index: 0;
+}
+#intro2 {
+	position: relative;
+	width: 100%;
+	bottom: 65px;
+}
 #self, #typed2 {
 	position: absolute;
 	top:100px;
@@ -130,30 +148,17 @@ a {
 #typed2 {
 	width: 600px;
 	right: 80px;
-	background-color: black;
+	background-color: Black;
 }
 #test {
 	margin-left: 30px;
 	margin-right: 30px;
 	color: white;
 }
-#canv {
-}
-#canv2 {
-  position: absolute;
-  left:0;
-  right: 0;
-  margin: auto;  
-  z-index: 1;
-}
-#final-panel {
-	position: relative;
+#footer-panel {
 	width: 100%;
-	height: 800px;
-	background-color: #FFF300;
-	z-index: 0;
+	background-color: Red;
 }
-
 #contact {
 	position: absolute;
 	width: 500px;
@@ -161,10 +166,6 @@ a {
 	bottom: 50px;
 	left: 300px;
 	background-color:  #FFF300;
-	z-index: 4000;
 }
-
 footer {
-	width: 100%;
-	align: center;
 }

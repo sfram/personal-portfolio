@@ -73,7 +73,19 @@
 			</div>
 			<canvas id= "canv" width= "1100" height= "500">
 			Your browser does not support the HTML5 canvas tag.
+			</canvas>	
+			<canvas id= "canv2" width="1100" height="500">
+			Your browser does not support the HTML5 canvas tag.
 			</canvas>
+			<div id= "fill-panel">
+<!-- 				<div id= "contact">
+					<img src = "assets/gh.png">
+					<img src = "assets/e.png">
+					<img src = "assets/fb.png">
+					<img src = "assets/sc.png">
+					<img src = "assets/li.png">				
+				</div> -->
+			</div>
 			<div id= "intro2">
 				<img id= "self" src= "mepluscat.jpg">
 				<div id="typed2">
@@ -83,25 +95,17 @@
 					In my spare time I can be usually be found...
 					</p>
 				</div>
-			</div>		
-			<canvas id= "canv2" width="1100" height="600">
+			</div>	
+			<canvas id= "canv3" width="1100" height="500">
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>
-			<div id= "final-panel">
-				<div id= "contact">
-				<img src = "assets/gh.png">
-				<img src = "assets/e.png">
-				<img src = "assets/fb.png">
-				<img src = "assets/sc.png">
-				<img src = "assets/li.png">				
-				</div>
+			<div id="footer-panel">
 			</div>
 		</div>
-			<footer>
-			<p>Samy Ramsey &copy; <script type="text/javascript"> var d = new Date(); var year = d.getFullYear(); document.write(year);</script></p>
-			</footer>
 	</div>
-	
+	<footer>
+		<p>Samy Ramsey &copy; <script> var d = new Date(); var year = d.getFullYear(); document.write(year);</script></p>
+	</footer>
 	<script>
 		var c = document.getElementById("canv");
 		var context = c.getContext("2d");
@@ -119,11 +123,22 @@
 		context2.beginPath();
 		context2.moveTo(0,0);
 		context2.lineTo(1100, 0);
-		context2.lineTo(1100, 520);
-		context2.lineTo(0, 600);
+		context2.lineTo(1100, 420);
+		context2.lineTo(0, 500);
 		context2.closePath();
 		context2.fillStyle = "#74DF00";
 		context2.fill();
+		
+	    var ccc = document.getElementById("canv3");
+		var context3 = ccc.getContext("2d");
+		context3.beginPath();
+		context3.moveTo(0,0);
+		context3.lineTo(0, 420);
+		context3.lineTo(1100, 500);
+		context3.lineTo(1100, 0);
+		context3.closePath();
+		context3.fillStyle = "Purple";
+		context3.fill();
 	</script>
   </body>
 </html>

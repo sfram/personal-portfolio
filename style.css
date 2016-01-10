@@ -123,8 +123,8 @@ a {
   z-index: 1;
 }
 #canv3 {
-	position: absolute;
-	z-index: 9000;
+	position: relative;
+	z-index: 2;
 }
 #fill-panel {
 	position: relative;
@@ -161,7 +161,7 @@ a {
 	position: relative;
 	bottom: 90px;
 	margin-bottom: 70px;
-	z-index: 2;
+	z-index: 1;
 	width: 100%;
 	height: 400px;
 	background-color: Red;

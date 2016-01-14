@@ -28,5 +28,5 @@
 		context3.lineTo(1100, 500);
 		context3.lineTo(1100, 0);
 		context3.closePath();
-		context3.fillStyle = "Purple";
+		context3.fillStyle = "#FCE220";
 		context3.fill();

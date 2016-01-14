@@ -54,7 +54,7 @@ body {
 }
 #head {
     position: fixed;
-    z-index: 4;
+    z-index: 9;
     width: 100%;
     height: 70px;
     background-color: black;
@@ -87,7 +87,7 @@ a {
 #container {
     position: relative;
     width: 1100px;
-	height: 1000px;
+	height: 1100px;
     margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 70px;
@@ -113,12 +113,24 @@ a {
 }
 #canv {
 }
+#con {
+	font-size: 38px;
+	text-align: center;
+	color: black;	
+}
 #test2 {
   position: absolute;
-  width: 200px;
+  width: 400px;
   height: 200px;
-  background-color: Pink;
-  z-index: 999999;
+  left: 350px;
+  bottom: 150px;
+  background-color: #74DF00;
+  z-index: 6;
+}
+#const {
+	font-size: 28px;
+	color: black;
+	text-align: center;
 }
 #canv2 {
   position: relative;
@@ -136,7 +148,7 @@ a {
 	position: relative;
 	width: 100%;
 	height: 500px;
-	background-color: Purple;
+	background-color: #FCE220;
 	z-index: 0;
 	bottom: 100px;
 }
@@ -166,21 +178,21 @@ a {
 	color: white;
 }
 #footer-panel {
-	position: relative; 
-	margin-bottom: 70px;
+	position: relative;
+	bottom: 750px;
 	z-index: 1;
 	width: 100%;
 	height: 400px;
-	background-color: Red;
+	background-color: #0B6121;
 }
 #contact {
 	position: absolute;
 	width: 500px;
-	bottom: 100px;
+	bottom: 50px;
 	left: 0px;
 	right: 0px;
 	margin: 0 auto;
-	background-color:  #FFF300;
+	background-color: #0B6121;
 }
 footer {
 }

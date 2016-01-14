@@ -20,9 +20,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+$(function(){
+	$("#typed").typed({
+		//35 chars - 10
+		stringsElement: $("#typed-text"),
+		startDelay: 2000,
+		typeSpeed: 15,
+		backSpeed: 2,
+		loop: false,
+		contentType: 'html', // or text
+		// defaults to false for infinite loop
+		loopCount: false,
+		callback: function(){
+			console.log(typed.backspace);
+			newTyped();
+		},
+		resetCallback: function() { 
+		}
+	});
+});
 
+function newTyped() { 
+};
 
-
+function foo(){ 
+	console.log("Callback"); 
+}
+	
 ! function($) {
 
     "use strict";

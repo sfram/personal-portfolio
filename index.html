@@ -6,41 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="typed/typed.js" type="text/javascript"></script>
-	<script>
-	function codeAddress() {
-		var x = document.getElementById("contact").parentElement.nodeName;
-		console.log(x);
-		$("contact").parent().attr("id");
-	}
-	window.onload = codeAddress;
-	
-    $(function(){
-        $("#typed").typed({
-			//35 chars - 10
-			stringsElement: $("#typed-text"),
-			startDelay: 2000,
-            typeSpeed: 15,
-			backSpeed: 2,
-            loop: false,
-            contentType: 'html', // or text
-            // defaults to false for infinite loop
-            loopCount: false,
-            callback: function(){
-				console.log(typed.backspace);
-				newTyped();
-			},
-            resetCallback: function() { 
-			}
-        });
-    });
-
-    function newTyped() { 
-	};
-    function foo(){ 
-		console.log("Callback"); 
-	}
-	
-</script>	
  </head>
   <body>
 	<div id= "content">
@@ -74,17 +39,11 @@
 			<canvas id= "canv" width= "1100" height= "500">
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>	
+			<div id= "test2"></div>
 			<canvas id= "canv2" width="1100" height="500">
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>
 			<div id= "fill-panel">
-<!-- 				<div id= "contact">
-					<img src = "assets/gh.png">
-					<img src = "assets/e.png">
-					<img src = "assets/fb.png">
-					<img src = "assets/sc.png">
-					<img src = "assets/li.png">				
-				</div> -->
 			</div>
 			<div id= "intro2">
 				<img id= "self" src= "mepluscat.jpg">
@@ -100,45 +59,19 @@
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>
 			<div id="footer-panel">
+				<div id= "contact">
+					<img src= "assets/gh.png" id= "first">
+					<img src = "assets/e.png">
+					<img src = "assets/fb.png">
+					<img src = "assets/sc.png">
+					<img src = "assets/li.png">				
+				</div>
 			</div>
 		</div>
 	</div>
 <!-- 	<footer>
 		<p>Samy Ramsey &copy; <script> var d = new Date(); var year = d.getFullYear(); document.write(year);</script></p>
 	</footer> -->
-	<script>
-		var c = document.getElementById("canv");
-		var context = c.getContext("2d");
-		context.beginPath();
-		context.moveTo(0,0);
-		context.lineTo(0, 420);
-		context.lineTo(1100, 500);
-		context.lineTo(1100, 0);
-		context.closePath();
-		context.fillStyle = "#0B6121";
-		context.fill();
-		
-		var cc = document.getElementById("canv2");
-		var context2 = cc.getContext("2d");
-		context2.beginPath();
-		context2.moveTo(0,0);
-		context2.lineTo(1100, 0);
-		context2.lineTo(1100, 420);
-		context2.lineTo(0, 500);
-		context2.closePath();
-		context2.fillStyle = "#74DF00";
-		context2.fill();
-		
-	    var ccc = document.getElementById("canv3");
-		var context3 = ccc.getContext("2d");
-		context3.beginPath();
-		context3.moveTo(0,0);
-		context3.lineTo(0, 420);
-		context3.lineTo(1100, 500);
-		context3.lineTo(1100, 0);
-		context3.closePath();
-		context3.fillStyle = "Purple";
-		context3.fill();
-	</script>
+	<script src="canv.js"></script>
   </body>
 </html>

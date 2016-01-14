@@ -6,6 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="typed/typed.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	
+	  jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+		event.preventDefault();
+		$('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+		} );
+	  } );
+	  
+	</script>
  </head>
   <body>
 	<div id= "content">
@@ -14,13 +24,13 @@
 			<nav id= "menu">
 				<ul>
 					<li>
-						<a href="">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#intro2">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</li>
 					<li>
-						<a href="">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="assets/cv.pdf">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</li>
 					<li>
-						<a href="">Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -41,7 +51,7 @@
 			</canvas>
 			<p id= "con">Latest Projects</p>
 			<div id= "test2">
-				<p id= "const">Coming soon!<br>Check out my GitHub <a href="https://github.com/sfram/">here!</a></p>
+				<p id= "const">Under construction!<br>Check out my GitHub <a href="https://github.com/sfram/">here!</a></p>
 			</div>
 			<canvas id= "canv2" width="1100" height="500">
 			Your browser does not support the HTML5 canvas tag.
@@ -49,7 +59,7 @@
 			<div id= "fill-panel">
 			</div>
 			<div id= "intro2">
-				<img id= "self" src= "mepluscat.jpg">
+				<img id= "self" src= "assets/mepluscat.jpg">
 				<div id="typed2">
 					<p id= "test">Welcome! I'm Samy, a senior at <b>Indiana University</b> and aspiring software developer.
 					As a lover of the visual arts I'm constantly trying to create artful code.
@@ -65,11 +75,11 @@
 			</canvas>
 			<div id="footer-panel">
 				<div id= "contact">
-					<img src= "assets/gh.png" id= "first">
-					<img src = "assets/e.png">
-					<img src = "assets/fb.png">
+					<a href= "https://github.com/sfram/"><img src= "assets/gh.png" id= "first"></a>
+					<a href= "mailto:sframsey@umail.iu.edu"><img src = "assets/e.png"></a>
+					<a href= "https://www.facebook.com/samy.ramsey"><img src = "assets/fb.png"></a>
 <!-- 					<img src = "assets/sc.png">
- -->					<img src = "assets/li.png">				
+ -->				<a href="www.linkedin.com/in/samyramsey"><img src = "assets/li.png"></a>		
 				</div>
 			</div>
 		</div>

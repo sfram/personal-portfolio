@@ -87,7 +87,7 @@ a {
 #container {
     position: relative;
     width: 1100px;
-	height: 1100px;
+	height: 1200px;
     margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 70px;
@@ -123,7 +123,7 @@ a {
   width: 400px;
   height: 200px;
   left: 350px;
-  bottom: 150px;
+  bottom: 300px;
   background-color: #74DF00;
   z-index: 6;
 }
@@ -155,7 +155,7 @@ a {
 #intro2 {
 	position: absolute;
 	width: 100%;
-	bottom: 65px;
+	bottom: 140px;
 	z-index: 3;
 }
 #self, #typed2 {
@@ -179,10 +179,10 @@ a {
 }
 #footer-panel {
 	position: relative;
-	bottom: 750px;
+	bottom: 600px;
 	z-index: 1;
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	background-color: #0B6121;
 }
 #contact {

@@ -88,10 +88,8 @@ a {
     position: relative;
     width: 1100px;
 	height: 1200px;
-    margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 70px;
-	padding-top: 70px;
+	top: 70px;
+    margin: 0 auto;
 	background-color: #74DF00;
 }
 #typed {
@@ -113,24 +111,27 @@ a {
 }
 #canv {
 }
-#con {
-	font-size: 38px;
-	text-align: center;
-	color: black;	
-}
 #test2 {
   position: absolute;
   width: 400px;
   height: 200px;
   left: 350px;
-  bottom: 300px;
+  bottom: 450px;
   background-color: #74DF00;
   z-index: 6;
 }
+#con {
+	position: relative;
+	font-size: 38px;
+	text-align: center;
+	color: black;	
+	z-index: 8;
+}
 #const {
+	position: relative;
+	text-align: center;
 	font-size: 28px;
 	color: black;
-	text-align: center;
 }
 #canv2 {
   position: relative;
@@ -142,7 +143,7 @@ a {
 #canv3 {
 	position: relative;
 	z-index: 2;
-	bottom: 500px;
+	margin-top: -500px;
 }
 #fill-panel {
 	position: relative;
@@ -155,7 +156,7 @@ a {
 #intro2 {
 	position: absolute;
 	width: 100%;
-	bottom: 140px;
+	bottom: 255px;
 	z-index: 3;
 }
 #self, #typed2 {
@@ -179,9 +180,10 @@ a {
 }
 #footer-panel {
 	position: relative;
-	bottom: 600px;
-	z-index: 1;
 	width: 100%;
+	bottom: 100px;
+	margin-bottom: 70px;
+	z-index: 1;
 	height: 200px;
 	background-color: #0B6121;
 }
@@ -195,4 +197,7 @@ a {
 	background-color: #0B6121;
 }
 footer {
+	position: relative;
+	top: 500px;
+	margin-left: 400px;
 }

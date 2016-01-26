@@ -44,6 +44,7 @@
 * {
 	font-family: abeezee;
 }
+
 body {
     margin: 0px;
 	background-color: #404040;
@@ -85,9 +86,12 @@ a {
 	color: white;
 	text-decoration: none;
 }
+#ekans {
+}
 #container {
     position: relative;
-    width: 1400px;
+    width: 70vw;
+	max-width: 70vw;
 	height: auto;
 	top: 70px;
     margin: 0 auto;

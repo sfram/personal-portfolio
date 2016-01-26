@@ -1,5 +1,10 @@
 		var c = document.getElementById("canv");
 		var context = c.getContext("2d");
+		var screenWidth = screen.width;
+		
+		var canvasWidth = (.7 * screenWidth);
+		context.canvas.width = canvasWidth;
+		
 		context.beginPath();
 		context.moveTo(0,0);
 		context.lineTo(0, 420);
@@ -8,25 +13,3 @@
 		context.closePath();
 		context.fillStyle = "#0B6121";
 		context.fill();
-		
-		var cc = document.getElementById("canv2");
-		var context2 = cc.getContext("2d");
-		context2.beginPath();
-		context2.moveTo(0,0);
-		context2.lineTo(1100, 0);
-		context2.lineTo(1100, 420);
-		context2.lineTo(0, 500);
-		context2.closePath();
-		context2.fillStyle = "#74DF00";
-		context2.fill();
-		
-	    var ccc = document.getElementById("canv3");
-		var context3 = ccc.getContext("2d");
-		context3.beginPath();
-		context3.moveTo(0,0);
-		context3.lineTo(0, 420);
-		context3.lineTo(1100, 500);
-		context3.lineTo(1100, 0);
-		context3.closePath();
-		context3.fillStyle = "#FCE220";
-		context3.fill();

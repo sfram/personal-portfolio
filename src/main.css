@@ -93,12 +93,12 @@ body {
     height: 70px;
     background-color: black;
 }
-#headtext {
-    font-size: 28px;
+#head-text {
     position: absolute;
     left: 5%;
     top: calc(50% - 14px);
     margin: 0 auto;
+    font-size: 28px;
     color: white;
 }
 #menu {
@@ -134,8 +134,8 @@ a {
     text-align: center;
 }
 #typed {
-    font-size: 38px;
     line-height: 150%;
+    font-size: 38px;
     color: white;
 }
 #portfo-block {
@@ -150,8 +150,8 @@ a {
 }
 #proj-title {
     position: relative;
-    font-size: 38px;
     text-align: center;
+    font-size: 38px;
     color: black;
 }
 #const {
@@ -164,7 +164,7 @@ a {
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: #257F87;
+    background-color: #008B8B;
 }
 #is_that_him,
 #bio-block {
@@ -192,17 +192,37 @@ a {
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: #0B6121;
     margin-bottom: 70px;
+    background-color: #14a25b;
+}
+#connect_w_moi {
+	position: absolute;
+	width: 100%;
+	top: -.2em;
+	text-align: center;
+	font-size: 38px;
+	letter-spacing: -2px;
+	color: rgba(0, 0, 0, 0.75); 
+	background-color: #FCE220;
+
+}
+#connect_w_moi:after {
+	content: "Connect with me!";
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 2px;
+	top: 1px;
+	color: rgba(220, 20, 60, 0.5);   
 }
 #contact-block {
     position: relative;
     width: 500px;
-    top: 50%;
-    left: 100px;
+    top: 70%;
+    left: 115px;
     transform: translateY(-50%);
     margin: 0 auto;
-    background-color: #0B6121;
+    background-color: #14a25b;
 }
 footer {
     position: relative;

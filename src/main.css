@@ -39,7 +39,7 @@
 
 @font-face {
 	font-family: abeezee;
-	src: url("abeezee.otf") format("opentype");
+	src: url("../assets/abeezee.otf") format("opentype");
 }
 * {
 	font-family: abeezee;
@@ -48,7 +48,7 @@
 body {
     margin: 0px;
 	background-color: #404040;
-	background-image: url("assets/bg.png");
+	background-image: url("../assets/bg.png");
 }
 #content {
     position: relative;
@@ -91,7 +91,6 @@ a {
 #container {
     position: relative;
     width: 70vw;
-	max-width: 70vw;
 	height: auto;
 	top: 70px;
     margin: 0 auto;

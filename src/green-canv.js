@@ -1,4 +1,4 @@
-		var c = document.getElementById("canv");
+		var c = document.getElementById("green-canv");
 		var context = c.getContext("2d");
 		var screenWidth = screen.width;
 		

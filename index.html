@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Samy Ramsey</title>
-	<link rel="stylesheet" type="text/css" href="dist/main.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/main.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="dist/typed.min.js" type="text/javascript"></script>
-	<script src="dist/autoscroll.min.js" type="text/javascript"></script>
- </head>
-  <body>
-	<div id= "content">
-		<header id= "head">		
-			<p id= "headtext">Samy Ramsey</p>
-			<nav id= "menu">
-				<ul>
-					<li>
-						<a href="assets/cv.pdf">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<div id= "ekans">
-		<div id= "container">
-			<div id= "typed-text">
-				<p>Hi, my name is Samy.<br>I'm a student.</p>
-				<p>Hi, my name is Samy.<br>I'm a designer.</p>
-				<p>Hi, my name is Samy.<br>I'm a developer.</p>
-				<p>Hi, my name is Samy.<br>I'm a </p>
-				<p>Hi, my name is Samy.<br></p>
-			</div>
-			<div id= "intro">
-				<span id="typed"></span>
-			</div>
-			<canvas id= "canv" height= "500">
+    <script src="dist/autoscroll.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header id="head">
+            <p id="headtext">Samy Ramsey</p>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="assets/cv.pdf">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <div id="typed-text">
+                <p>Hi, my name is Samy.<br>I'm a student.</p>
+                <p>Hi, my name is Samy.<br>I'm a designer.</p>
+                <p>Hi, my name is Samy.<br>I'm a developer.</p>
+                <p>Hi, my name is Samy.<br>I'm a </p>
+                <p>Hi, my name is Samy.<br></p>
+            </div>
+            <div id="intro-block">
+                <span id="typed"></span>
+            </div>
+            <canvas id="green-canv" height="500">
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>
-			<div id= "test2">
-				<p id= "con">Latest Projects<br><br></p>
-				<p id= "const">Under construction!<br>Check out my GitHub <a href="https://github.com/sfram/">here!</a></p>
-			</div>
-			<div id= "test3">
-				<img id= "self" src= "assets/mepluscat.jpg">
-				<div id="typed2">
-					<p id= "test">Welcome! I'm Samy, a senior at <b>Indiana University</b> and aspiring software developer.
-					As a lover of the visual arts I'm constantly trying to create artful code.
-					Naturally, I gravitated towards web development and design and am extremely enthusiastic to build my skills and learn as much as I can!
-					I am currently on the job market.<br><br>
-					
-					My contact information is below if you have any questions or just want to say hello.
-					</p>
-				</div>
-			</div>
-			<div id="footer-panel">
-<!-- 				<p id= "connect">Connect with me!</p> -->
-				<div id= "contact">
-					<a href= "https://github.com/sfram/"><img src= "assets/gh.png" id= "first"></a>
-					<a href= "mailto:sframsey@umail.iu.edu"><img src = "assets/e.png"></a>
-					<a href= "https://www.facebook.com/samy.ramsey"><img src = "assets/fb.png"></a>
-<!-- 					<img src = "assets/sc.png">
- -->				<a href="https://www.linkedin.com/in/samyramsey"><img src = "assets/li.png"></a>		
-				</div>
-			</div>
-		</div>
-		</div>
-	<footer>
-		<p><span id= "cr">Samy Ramsey &copy; <script> var d = new Date(); var year = d.getFullYear(); document.write(year);</script></span></p>
-	</footer>
-	</div>
-	<script src="src/canv.js"></script>
-  </body>
+            <div id="portfo-block">
+                <p id="proj-title">Latest Projects<br><br></p>
+                <p id="const">Under construction!<br>Check out my GitHub <a href="https://github.com/sfram/">here!</a></p>
+            </div>
+            <div id="bio-section">
+                <img id="is_that_him" src="assets/mepluscat.jpg">
+                <div id="bio-block">
+                    <p id="bio">Welcome! I'm Samy, a senior at <b>Indiana University</b> and aspiring software developer. As a lover of the visual arts I'm constantly trying to create artful code. Naturally, I gravitated towards web development and design and am extremely enthusiastic to build my skills and learn as much as I can! I am currently on the job market.<br><br> My contact information is below if you have any questions or just want to say hello.
+                    </p>
+                </div>
+            </div>
+            <div id="contact-section">
+                <!-- 				<p id= "connect">Connect with me!</p> -->
+                <div id="contact-block">
+                    <a href="https://github.com/sfram/"><img src="assets/gh.png" id="first"></a>
+                    <a href="mailto:sframsey@umail.iu.edu"><img src="assets/e.png"></a>
+                    <a href="https://www.facebook.com/samy.ramsey"><img src="assets/fb.png"></a>
+                    <a href="https://www.linkedin.com/in/samyramsey"><img src="assets/li.png"></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p><span id="copyr">Samy Ramsey &copy; <script> var d = new Date(); var year = d.getFullYear(); document.write(year);</script></span></p>
+        </footer>
+    </div>
+    <script src="dist/green-canv.min.js"></script>
+</body>
+
 </html>

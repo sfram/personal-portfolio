@@ -179,7 +179,7 @@ a {
 #bio-block {
     top: 100px;
     width: 600px;
-    right: 150px;
+    right: 0px;
     background-color: Black;
 }
 #bio {

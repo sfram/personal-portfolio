@@ -75,10 +75,13 @@
 * {
     font-family: abeezee;
 }
-body {
-    margin: 0px;
-    background-color: #404040;
-    background-image: url("../assets/bg.png");
+
+#logo {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+    left: 5%;
+	margin: 0 auto;
 }
 #content {
     position: relative;
@@ -93,13 +96,10 @@ body {
     height: 70px;
     background-color: black;
 }
-#head-text {
-    position: absolute;
-    left: 5%;
-    top: calc(50% - 14px);
-    margin: 0 auto;
-    font-size: 28px;
-    color: white;
+body {
+    margin: 0px;
+    background-color: #404040;
+    background-image: url("../assets/bg.png");
 }
 #menu {
     position: absolute;
@@ -124,7 +124,7 @@ a {
     height: auto;
     top: 70px;
     margin: 0 auto;
-    background-color: #74DF00;
+    background-color: #0B6121;
 }
 #intro-block {
     position: absolute;
@@ -138,27 +138,17 @@ a {
     font-size: 38px;
     color: white;
 }
-#portfo-block {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-color: #74DF00;
-}
-#proj-title,
-#const {
-    top: 40px;
-}
 #proj-title {
     position: relative;
     text-align: center;
     font-size: 38px;
-    color: black;
+    color: white;
 }
 #const {
     position: relative;
     text-align: center;
     font-size: 28px;
-    color: black;
+    color: white;
 }
 #bio-section {
     position: relative;
@@ -171,13 +161,13 @@ a {
     position: absolute;
 }
 #is_that_him {
-    width: 20%;
+	top: 35%;
+    width: 30%;
     left: 150px;
-    top: 50%;
     transform: translateY(-50%);
 }
 #bio-block {
-    top: 100px;
+    top: 50px;
     width: 600px;
     right: 0px;
     background-color: Black;

@@ -11,5 +11,5 @@
 		context.lineTo(1400, 500);
 		context.lineTo(1400, 0);
 		context.closePath();
-		context.fillStyle = "#0B6121";
+		context.fillStyle = "#5b5b5b";
 		context.fill();

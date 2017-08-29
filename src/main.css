@@ -77,7 +77,9 @@
     font-family: abeezee;
     src: url("../assets/abeezee.otf") format("opentype");
 }
-
+a:hover {
+    text-decoration: underline;
+}
 #logo {
 	position: absolute;
 	width: 70px;
@@ -127,7 +129,7 @@ a {
     height: auto;
     top: 70px;
     margin: 0 auto;
-    background-color: #0B6121;
+    background-color: #3F5A24;
 }
 #intro-block {
     position: absolute;
@@ -142,39 +144,53 @@ a {
     font-size: 38px;
     color: white;
 }
-#proj-title {
+#portfo-block {
     position: relative;
-    text-align: center;
-    font-size: 38px;
-    color: white;
+	text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: #3F5A24;
+}
+#portfo-elements {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#proj-title,
+#const {
+	position: relative;
+	font-family: open_sans;
+    color: black;
+	background-color: #E75480;
+}
+#proj-title {
+    font-size: 55px;
+	text-decoration: underline;
 }
 #const {
-    position: relative;
-    text-align: center;
     font-size: 28px;
-    color: white;
 }
 #bio-section {
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: #0B6121;
+    background-color: #003100;
 }
 #is_that_him,
 #bio-block {
     position: absolute;
 }
 #is_that_him {
-	top: 35%;
-    width: 30%;
-    left: 50px;
+	top: 215px;
+    width: 25%;
+    left: 230px;
     transform: translateY(-50%);
 }
 #bio-block {
     top: 50px;
     width: 600px;
     right: 0px;
-    background-color: Black;
+    background-color: #003100;
 }
 #bio {
     font-family: open_sans;
@@ -187,7 +203,7 @@ a {
     width: 100%;
     height: 200px;
     margin-bottom: 70px;
-    background-color: #404040;
+    background-color: #5b5b5b;
 }
 #connect_w_moi {
 	font-family: abeezee;
@@ -217,7 +233,7 @@ a {
     left: 115px;
     transform: translateY(-50%);
     margin: 0 auto;
-    background-color: #404040;
+    background-color: #5b5b5b;
 }
 footer {
 	font-family: open_sans;

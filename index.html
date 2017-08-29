@@ -13,11 +13,11 @@
 <body>
     <div id="content">
         <header id="head">
-            <img id="logo" src="assets/logo.png">
+            <a href="."><img id="logo" src="assets/logo.png" onmouseover="hover(this, 'logo');" onmouseout="unhover(this, 'logo');" /></a>
             <nav id="menu">
                 <ul>
                     <li>
-                        <a href="assets/cv.pdf">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a id="test" href="assets/cv.pdf">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </li>
                     <li>
                         <a href="#contact-section">Contact</a>
@@ -35,24 +35,30 @@
             <canvas id="green-canv" height="500">
 			Your browser does not support the HTML5 canvas tag.
 			</canvas>
+            <div id="portfo-block">
+			<div id="portfo-elements">
+				<span id="proj-title">Latest Projects</span><br><br>
+				<span id="const">Section under construction!<br>In the meantime, check out my GitHub <a href="https://github.com/sfram/">here!</a></span>
+			</div>
+			</div>
             <div id="bio-section">
                 <img id="is_that_him" src="assets/me_.png">
                 <div id="bio-block">
-                    <p id="bio">I'm a creative and engineer hybrid, having recently obtained my bachelor's Computer Science and Informatics degrees last year from Indiana University Bloomington. I have established a robust software engineering background and remain captivated by computing and its place in the world today, especially by all technologies web-related.
+                    <p id="bio">Accomplished software engineer and Indiana University graduate (Computer Science BA, Informatics BS). I have established a robust software engineering background and remain captivated by computing and its place in the world today, especially by all technologies web-related.
 						<br><br>
-						More specifically, I am most experienced with using JavaScript alongside its associated technologies to build for the web and love to contribute my knowledge to design and develop dynamic applications. An avid artist as well, naturally I am drawn to the creative nature of problem solving that comes with writing code. 
+						More specifically, I am most experienced with using JavaScript alongside its associated technologies to build for the web but I am drawn to the creative nature of problem solving that comes with writing code in any language.
 						<br><br>
-						Always looking for opportunities to combine my passions of art and technology.
+						An avid painter and concept artist as well, I'm always looking for opportunities to combine my passions of art and technology by constantly creating.
                     </p>
                 </div>
             </div>
             <div id="contact-section">
                 <p id= "connect_w_moi">Connect with me!</p>
                 <div id="contact-block">
-                    <a href="https://github.com/sfram/"><img src="assets/gh.png" id="first"></a>
-                    <a href="mailto:sframsey@umail.iu.edu"><img src="assets/e.png"></a>
-                    <a href="https://www.facebook.com/samy.ramsey"><img src="assets/fb.png"></a>
-                    <a href="https://www.linkedin.com/in/samyramsey"><img src="assets/li.png"></a>
+                    <a href="https://github.com/sfram/"><img src="assets/gh.png" onmouseover="hover(this, 'gh');" onmouseout="unhover(this, 'gh');" /></a>
+                    <a href="mailto:sframsey@umail.iu.edu"><img src="assets/e.png" onmouseover="hover(this, 'e');" onmouseout="unhover(this, 'e');" /></a>
+                    <a href="https://www.facebook.com/samy.ramsey"><img src="assets/fb.png" onmouseover="hover(this, 'fb');" onmouseout="unhover(this, 'fb');" /></a>
+                    <a href="https://www.linkedin.com/in/samyramsey"><img src="assets/li.png" onmouseover="hover(this, 'li');" onmouseout="unhover(this, 'li');" /></a>
                 </div>
             </div>
         </div>
@@ -61,6 +67,7 @@
         </footer>
     </div>
     <script src="src/green-canv.js"></script>
+    <script src="src/on_hover.js"></script>
 </body>
 
 </html>
